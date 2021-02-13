@@ -1,5 +1,6 @@
 function makeNewNode(text, status) {
     newNode = document.createElement('div');
+
     var assign;
     if (status == 1) {
         assign = "freeSlot";
@@ -19,6 +20,5 @@ var data = [1, 0, 0, 1];
 show = document.getElementById("statussection");
 
 for (i = 1; i <= 4; i++) {
-    show.appendChild(makeNewNode("Slot" + i, data[i-1]));
-    
+    show.appendChild(makeNewNode("Slot " + i, data[i-1]));
 }

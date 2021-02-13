@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+* {
+    font-family: Montserrat, sans-serif;
+}
+
 body {
-    background: white;
+    background: rgba(235, 235, 235, 0.356);
+
 }
 
 .top {
     text-align: center;
-    background-color: blue;
-
+    font-size: 170%;
+    margin-bottom: 10px;
 }
 
 .statussection {
     display: flex;
     justify-content: center;
+    border-top: 2px solid #5ac6ac;
+    padding-top: 10px;
 }
 
 .freeSlot {
@@ -29,7 +38,7 @@ body {
     width: 150px;
     margin: 20px;
     border-radius: 5%;
-    background-color: #d5df7a;
+    background-color: #e67474;
     
     /* text */
     text-align: center;
