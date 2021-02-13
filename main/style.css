@@ -12,6 +12,7 @@ body {
 .top {
     text-align: center;
     font-size: 170%;
+
     margin-bottom: 10px;
 }
 
@@ -28,9 +29,11 @@ body {
     margin: 20px;
     border-radius: 5%;
     background-color: #7adfb5;
+    box-shadow: 2px 2px 8px #555555;
     
     /* text */
     text-align: center;
+    font-size: 80%;
 }
 
 .inUseSlot {
@@ -39,7 +42,9 @@ body {
     margin: 20px;
     border-radius: 5%;
     background-color: #e67474;
+    box-shadow: 2px 2px 8px #555555;
     
     /* text */
     text-align: center;
+    font-size: 80%;
 }
