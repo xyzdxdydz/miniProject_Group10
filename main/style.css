@@ -34,7 +34,6 @@ body {
 .top {
     text-align: center;
     font-size: 100%;
-
     margin-bottom: 10px;
 }
 
@@ -55,7 +54,6 @@ body {
     border: none;
     background-color: #7adfb5;
     box-shadow: 2px 2px 8px #555555;
-    cursor: pointer;
     
     /* text */
     text-align: center;
@@ -70,8 +68,7 @@ body {
     border-radius: 5%;
     border: none;
     background-color: #e67474;
-    box-shadow: 2px 2px 8px #555555;
-    cursor: pointer;
+    box-shadow: 2px 2px 8px #555555; 
     
     /* text */
     text-align: center;
@@ -115,7 +112,7 @@ body {
     cursor: pointer;
   }
 
-.stattext {
+#stattext {
     text-align: center;
     padding-top: 25px;
     margin: auto;
@@ -130,4 +127,5 @@ body {
     background: linear-gradient(135deg, #53e06b 0%,  #5ac6ac 100%); 
     color: white;
     margin: auto;
+    cursor: pointer;
 }
