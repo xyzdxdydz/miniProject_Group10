@@ -4,18 +4,21 @@ body {
 
 .top {
     text-align: center;
+    background-color: blue;
+
 }
 
-.status {
+.statussection {
     display: flex;
     justify-content: center;
 }
 
 .slot {
-    height: 250%;
-    width: 10%;
+    height: 250px;
+    width: 150px;
     margin: 20px;
-    background-color: lime;
+    border-radius: 5%;
+    background-color: #7adfb5;
     
     /* text */
     text-align: center;
