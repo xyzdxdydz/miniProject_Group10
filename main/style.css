@@ -6,12 +6,11 @@
 
 body {
     background: rgba(235, 235, 235, 0.356);
-
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 15px;
   }
   
   /* Track */
@@ -21,12 +20,12 @@ body {
   }
    
   ::-webkit-scrollbar-thumb {
-    background: rgb(144, 68, 177); 
+    background: #89e2c7; 
     border-radius: 10px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #6d3175; 
+    background: #5ac6ac; 
   }
   ::-webkit-scrollbar-corner {
       border-radius: 50px;
@@ -34,7 +33,7 @@ body {
 
 .top {
     text-align: center;
-    font-size: 170%;
+    font-size: 100%;
 
     margin-bottom: 10px;
 }
@@ -44,12 +43,14 @@ body {
     justify-content: center;
     border-top: 2px solid #5ac6ac;
     padding-top: 10px;
+    margin-bottom: 225px;
 }
 
 .freeSlot {
     height: 250px;
     width: 150px;
     margin: 20px;
+    padding: 10px;
     border-radius: 5%;
     border: none;
     background-color: #7adfb5;
@@ -65,6 +66,7 @@ body {
     height: 250px;
     width: 150px;
     margin: 20px;
+    padding: 10px;
     border-radius: 5%;
     border: none;
     background-color: #e67474;
@@ -113,4 +115,19 @@ body {
     cursor: pointer;
   }
 
+.stattext {
+    text-align: center;
+    padding-top: 25px;
+    margin: auto;
+}
 
+.stat {
+    display: block;
+    justify-content: end;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #53e06b 0%,  #5ac6ac 100%); 
+    color: white;
+    margin: auto;
+}

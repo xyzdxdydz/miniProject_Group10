@@ -1,7 +1,7 @@
 
 // Function Section
 function makeNewNode(text, num, status) {
-    newNode = document.createElement('input');
+    newNode = document.createElement('h2');
 
     var assign;
     if (status == 1) {
@@ -12,8 +12,7 @@ function makeNewNode(text, num, status) {
 
     newNode.setAttribute("class", assign);
     newNode.setAttribute("id", i);
-    newNode.setAttribute("type", "submit");
-    newNode.setAttribute("value", text + i);
+    newNode.innerText = text + i;
     newNode.setAttribute("onClick", "reply_click(this.id)");
     addText = document.createElement('h2');
     newNode.appendChild(addText);
