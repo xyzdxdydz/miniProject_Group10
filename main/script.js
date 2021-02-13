@@ -52,3 +52,9 @@ setInterval(() => {
         show.appendChild(newdiv);
     });
 }, 5000);
+
+// Prototype
+var i = 1;
+for (i = 1; i <= 4; i++) {
+    show.appendChild(makeNewNode("Slot ", i, data[i-1]));
+}
