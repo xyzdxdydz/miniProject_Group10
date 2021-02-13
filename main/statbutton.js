@@ -9,6 +9,8 @@ function showAllStat(id) {
     content.appendChild(box);
 }
 
+var content = document.getElementById("forcontent");
+
 var btn1 = document.getElementById("statbutton");
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
