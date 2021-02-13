@@ -1,4 +1,3 @@
-
 // Function Section
 function makeNewNode(text, num, status) {
     newNode = document.createElement('h2');
@@ -9,7 +8,7 @@ function makeNewNode(text, num, status) {
     var assign;
     if (status == 1) {
         assign = "freeSlot";
-        addText = document.createElement('h2');
+        addText = document.createElement('h4');
         addText.innerText = "(Available)";
         newNode.appendChild(addText);
     } else {
@@ -30,8 +29,26 @@ var data = [1, 0, 0, 1];
 
 // Get Data section
 show = document.getElementById("statussection");
-content = document.getElementById("forcontent");
 
-for (i = 1; i <= 4; i++) {
-    show.appendChild(makeNewNode("Slot ", i, data[i-1]));
-}
+setInterval(() => {
+    fetch("https://exceed10.cpsk-club.xyz/")
+    .then((data) => data.json())
+    .then(datas => { 
+        var rm = document.getElementById("fetch");
+        rm.remove();
+
+        var newdiv = document.createElement("div");
+        newdiv.setAttribute("id", "fetch");
+        
+        var i = 1;
+
+        datas.forEach(d => {
+            if (!cache.includes(d.author)) {
+                newdiv.appendChild(makeNewNode("Slot ", i, data[i-1]));
+                i++;
+            }
+        });
+
+        show.appendChild(newdiv);
+    });
+}, 5000);
