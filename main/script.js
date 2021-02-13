@@ -24,17 +24,6 @@ function reply_click(clicked_id) {
       clickID = clicked_id;
   }
 
-function showAllStat(id) {
-    box = document.createElement('div');
-    box.setAttribute("id", "showstat");
-
-    text = document.createElement('p');
-    text.innerText = "Some text in the Modal..";
-    box.appendChild(text);
-
-    content.appendChild(box);
-}   
-
 // Variable Section
 var i;
 var data = [1, 0, 0, 1];

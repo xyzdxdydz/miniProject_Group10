@@ -1,3 +1,14 @@
+function showAllStat(id) {
+    box = document.createElement('div');
+    box.setAttribute("id", "showstat");
+
+    text = document.createElement('p');
+    text.innerText = "Some text in the Modal..";
+    box.appendChild(text);
+
+    content.appendChild(box);
+}
+
 var btn1 = document.getElementById("statbutton");
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
